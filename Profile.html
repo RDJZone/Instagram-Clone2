@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram Profile Demo</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .profile-container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .profile-pic {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+      }
+
+      .profile-info {
+        margin-top: 20px;
+        text-align: center;
+      }
+
+      .profile-info p {
+        margin: 5px 0;
+      }
+
+      .post-img {
+        width: 100%;
+        margin-top: 20px;
+      }
+
+      .post-icons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+      }
+
+      .post-icons-left {
+        display: flex;
+      }
+
+      .post-icons i {
+        margin-right: 10px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="profile-container">
+      <img src="Nitin.webp" alt="Profile Picture" class="profile-pic" />
+      <h1>Nitin Kukdyal</h1>
+
+      <p>Followers: 143</p>
+      <p>Following: 1000</p>
+
+      <div class="post">
+        <div class="post-header">
+          <div class="post-info-flex">
+            <p>Nitin</p>
+          </div>
+          <i class="fas fa-ellipsis-h"></i>
+        </div>
+        <img src="Nitin.webp" alt="Post Image" class="post-img" />
+        <div class="post-icons">
+          <div class="post-icons-left">
+            <i data-feather="heart"></i>
+            <i data-feather="message-circle"></i>
+            <i data-feather="send"></i>
+          </div>
+          <i data-feather="bookmark"></i>
+        </div>
+        <p class="likes">100 likes</p>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <div class="post-info-flex">
+            <p>Nitin</p>
+          </div>
+          <i class="fas fa-ellipsis-h"></i>
+        </div>
+        <img src="Nitin1.jpeg" alt="Post Image" class="post-img" />
+        <div class="post-icons">
+          <div class="post-icons-left">
+            <i data-feather="heart"></i>
+            <i data-feather="message-circle"></i>
+            <i data-feather="send"></i>
+          </div>
+          <i data-feather="bookmark"></i>
+        </div>
+        <p class="likes">100 likes</p>
+      </div>
+      <!-- Sample Post -->
+
+      <!-- Post Icons -->
+      <div class="post-icons">
+        <div class="post-icons-left">
+          <i data-feather="heart"></i>
+          <i data-feather="message-circle"></i>
+          <i data-feather="send"></i>
+        </div>
+        <i data-feather="bookmark"></i>
+      </div>
+    </div>
+
+    <!-- Add Feather Icons Script -->
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
